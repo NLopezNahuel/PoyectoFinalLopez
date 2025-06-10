@@ -1,0 +1,22 @@
+/* stilos para los titulos y enlaces del html */
+
+ul{
+    text-align: right;
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+
+li{
+    color: black;
+    text-align: center;
+}
+p{
+    color: black;
+    text-align: center;
+}
+
+h3{
+    color: chocolate;
+}
