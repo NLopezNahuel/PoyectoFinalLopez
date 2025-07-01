@@ -1,0 +1,7 @@
+@mixin box ($height, $padding, $margin, $border){
+      height: $height; 
+      padding: $padding;
+      margin: $margin; 
+      border: $border;
+}
+
