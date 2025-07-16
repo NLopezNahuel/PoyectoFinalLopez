@@ -2,302 +2,42 @@
 
 @import "../sass/abstract/variables";
 
+//Reset
+
+@import "../sass/abstract/reset";
+
+//Global
+
+@import "../sass/abstract/global";
+
+//Header
+
+@import "../sass/abstract/header";
+
+//Hero
+@import"../sass/abstract/hero";
+
+//Main
+@import"../sass/abstract/main";
+
+//Productos
+@import"../sass/abstract/productos";
+
+//footer
+@import"../sass/abstract/footer";
+
+//Mediaqueries
+@import"../sass/abstract/mediaqueries";
+
+
 // Mixin
 @import "../sass/abstract/mixin";
 
 
 
-ul{
-    text-align: right;
-}
-
-h1{
-        color: rgb(104, 100, 100);
-    font-size:xx-large;
-    text-align: center;
-}
-
-
-li{
-    p{
-        color: black;
-    text-align: center;
-    }
-}
-
-h3{
-    color: chocolate;
-}
-
-.titulo {
-  height: 20vh;
-  background-image: url("CSS/imagenes.nosotros/importados.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-      h1{
-  color: white;
-  font-size: 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 10px;
-    }
-
-}
-
-header{
-      background-color: $color-header;
-      color: white;
-      text-align: center;
-      padding: 10px;
-}
-
-
-
-.logo img { 
-    width: 100%;
-    @include box (100px, 20px, 0px, 5px);
-}
-
-main {
-  background-color: #333;
-  @include box (auto, 5px, 5px, 5px);
-}
-
-
-.titulo{
-    padding: 10px;
-    font-size: 50px;
-}
-
-
-.titulo2{
-    color: $color-negrita;
-    text-align:center ;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-}
-
-
-.eslogan,
-.contacto {
-  
-  background-color:  $color-letras;
-  @include box (auto, 10px, 0px, 5px);
-
-  &.eslogan {
-    font-style: italic;
-    border: 10px;
-    margin: 10px;
-  
-
-    p {
-      font-size: normal;
-    }
-}
-
-  &.contacto {
-    font-style: normal;
-    margin: 20px;
-    border: 20px;
-  }
-
-  }
-
-  footer {
-  background-color: $color-header;
-  @include box (10vh, 10px, 5px, 5px );
- 
-  
-
-  p {
-    background-color: $color-letras;
-    padding: 2px;
-    font-size: 5px;
-    text-align: center;
-  
-  }
-}
-
-.laempresa{
-    color: whitesmoke;
-    text-align: center;
-    font-style: normal;
-    font-size: 1rem;
-}
-
-.pantallaso h3{
-    text-align: center;
-    text-decoration:dashed;
-
-}
-    
-
-.imagen{
-    display: flex;
-    flex-wrap: nowrap;
-     gap : 50px; /* espacio entre imagenes */
-    justify-content: center; /* centra la imagen */
-    flex-direction: column; /* para que texto e imagen se apilen verticalmente*/
-    align-items: center;
-
-    img{
-         padding: 00;
-         border-radius: 10px; 
-    }
-}
-
-.precios  {
-    display: grid;
-    grid-template-columns:2fr 2fr 2fr;
-    grid-template-rows:repeat(4, 200px);
-    gap: 10px;
-    padding: 10px;
-}
-
-.producto{
-    text-align: center;
-    border: 1px;
-    border-radius: 5px;
-    padding: 2px;
-    background-color: $color-producto;
-   
-    img{
-          width: 50%;
-          height: 10vh;
-         border-radius: 8px;
-      }
-
-      hover{
-    transform: scale(1.03);
-    background-color: antiquewhite;
-    }
-
-    button{
-    background-color: $color-producto;
-    color: whitesmoke;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-      hover{
-      background-color: rgb(0, 0, 0);
-      }
-    }
-}
-
-
-.descripcion,
-.precio{
-    font-size: 0.8rem;
-    font-weight: bold;
-
-    &precio{
-    margin-top: 5px;
-    }
-
-    &descripcion{
-        margin-top: 1px;
-    }
-}
 
 
 
 
-@media (min-width: 600px){
-   .titulo2 h2 {
-    font-size: 60px;
-  }
 
-  .eslogan,
-  .contacto {
-    font-size: 30px;
-    padding: 120px;
-  }
-
-  footer {
-    height: auto;
-    align-items: center;
-
-    p {
-      font-size: 15px;
-      text-align: center;
-    }
-  }
-
-  .nosotros h1 {
-    font-size: 35px;
-  }
-
-  .laempresa p {
-    font-size: 20px;
-  }
-
-  .prodypre h1 {
-    font-size: 35px;
-  }
-
-  .precios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 230px);
-    gap: 20px;
-    padding: 25px;
-  }
-
-  .producto img {
-    border-radius: 5px;
-  }
-}
-
-
-
-@media (min-width: 1024px) {
-  .titulo2 h2 {
-    font-size: 60px;
-  }
-
-  .eslogan {
-    font-size: 65px;
-  }
-
-  footer {
-    height: auto;
-    align-items: center;
-
-    p {
-      font-size: 20px;
-      text-align: center;
-    }
-  }
-
-  .nosotros h1 {
-    font-size: 70px;
-  }
-
-  .laempresa p {
-    font-size: 30px;
-  }
-
-  .prodypre h1 {
-    font-size: 70px;
-  }
-
-  .precios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 230px);
-    gap: 40px;
-    padding: 50px;
-  }
-
-  .producto img {
-    border-radius: 10px;
-  }
-}
 

@@ -1,0 +1,61 @@
+main {
+  background-color: #333;
+  @include box (auto, 5px, 5px, 5px);
+}
+
+
+.eslogan,
+.contacto {
+  
+  background-color:  $color-letras;
+  @include box (auto, 10px, 0px, 5px);
+
+  &.eslogan {
+    font-style: italic;
+    border: 10px;
+    margin: 10px;
+  
+
+    p {
+      font-size: normal;
+    }
+}
+
+  &.contacto {
+    font-style: normal;
+    margin: 20px;
+    border: 20px;
+  }
+
+  }
+
+  
+  
+
+.laempresa{
+    color: whitesmoke;
+    text-align: center;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.pantallaso h3{
+    text-align: center;
+    text-decoration:dashed;
+
+}
+    
+
+.imagen{
+    display: flex;
+    flex-wrap: nowrap;
+     gap : 50px; /* espacio entre imagenes */
+    justify-content: center; /* centra la imagen */
+    flex-direction: column; /* para que texto e imagen se apilen verticalmente*/
+    align-items: center;
+
+    img{
+         padding: 00;
+         border-radius: 10px; 
+    }
+}

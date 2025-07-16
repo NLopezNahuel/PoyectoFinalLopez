@@ -1,0 +1,14 @@
+footer {
+  background-color: $color-header;
+  @include box (10vh, 10px, 5px, 5px );
+ 
+  
+
+  p {
+    background-color: $color-letras;
+    padding: 2px;
+    font-size: 5px;
+    text-align: center;
+  
+  }
+}

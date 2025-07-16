@@ -72,6 +72,7 @@ main {
 
 .eslogan,
 .contacto {
+  background-image: url("");
   background-color: rgb(119, 118, 116);
   height: auto;
   padding: 10px;

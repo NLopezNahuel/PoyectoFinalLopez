@@ -1,0 +1,33 @@
+// titulo, imagenem de portada, subtitulo
+
+.titulo {
+  height: 20vh;
+  background-image: url("CSS/imagenes.nosotros/importados.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+
+
+      h1{
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+    }
+
+}
+
+
+.titulo2{
+    color: $color-negrita;
+    text-align:center ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
